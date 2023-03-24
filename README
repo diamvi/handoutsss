@@ -1,0 +1,45 @@
+Push Changes from VSCode to Glitch (Easy)
+Although the more indirect method outlined above is preferable, This simpler method is good if you have:
+
+Made changes in your master branch rather than in a new branch.
+Conflicts you can't seem to resolve.
+Errors using the other method.
+Note: You can work in both your master and a new branch, but beware confusion.
+
+Glitch - Allow changes to live master
+Edit your project on Glitch.com
+Go to Tools - Terminal to open a command-line.
+Enter git config receive.denyCurrentBranch updateInstead.
+As previously mentioned, Git on Glitch does not allow changes to be pushed to master by default . This changes that setting.
+
+VSCode - Stage, Commit, Push
+Enter VSCode's Source Control section to see a list of changed files ready for staging.
+
+VSCode Source Control
+The fastest way to stage and commit your changes is to:
+
+Enter a message.
+Click ✔.
+When the popup appears, confirm that you want to stage all changes.
+Click … and choose Push.
+You may be asked to confirm that you wish to push your code to the origin on Glitch.
+Your master branch should now have been pushed to Glitch
+
+Glitch Git Reset
+The final step to making your changes live is to reset Git.
+
+Edit your project on Glitch.com
+Go to Tools - Terminal to open a command-line.
+Enter git reset --hard.
+Enter refresh to refresh your project
+Test that your changes to your web-app are live.
+Pull Changes from VSCode to Glitch
+If you have made subsequent changes in the Glitch Editor, you will want to pull them into VSCode and synchronise your code.
+
+First, wait about 10 minutes for changes made in the Glitch Editor to propogate to the remote git master repository.
+Look to the bottom left of the VSCode window to confirm which local repository you want changes pulled into.
+Enter the VSCode Source Control section.
+Click ….
+To pull from the same repository, e.g. master-into-master, choose Pull.
+To pull into a repository with a different name, e.g. master-into-Your-Branch, choose Pull from, select origin, then select origin/master.
+As an alternative to using the GUI, launch the Command Palette (default: F1 or CTRL-shift-P) and type Git: Pull or Git: Pull from

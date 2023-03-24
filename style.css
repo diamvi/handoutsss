@@ -1,0 +1,565 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+    --color-bg: #343434;
+    --color-text-main: #000000;
+    --color-primary: #FFFF00;
+    --wrapper-height: 87vh;
+    --image-margin: 1rem;
+    --font-family: "HK Grotesk";
+    --font-family-header: "HK Grotesk";
+  }
+  
+  /* Basic page style resets */
+  * {
+    box-sizing: border-box;
+  }
+  [hidden] {
+    display: none !important;
+  }
+  
+  /* Import fonts */
+  @font-face {
+    font-family: HK Grotesk;
+    src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+      format("opentype");
+  }
+  @font-face {
+    font-family: HK Grotesk;
+    font-weight: bold;
+    src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+      format("opentype");
+  }
+  @font-face {
+    font-family: Neue Hass Grotesk Display Pro;
+    font-weight: medium;
+    src: url("https://i.supa.codes/9xBBC")
+      format("truetype");
+  }
+  
+  /* Navigation grid */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto 0;
+    padding: 1rem 0 0.75rem 0;
+    width: 100%;
+    flex-wrap: wrap;
+    border-top: 4px solid #fff;
+  }
+  
+  .footer a:not(.btn--remix):link,
+  a:not(.btn--remix):visited {
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-style: none;
+  }
+  .footer a:hover {
+    background: var(--color-primary);
+  }
+  
+  .footer .links {
+    padding: 0.5rem 1rem 1.5rem;
+    white-space: nowrap;
+  }
+
+  .link {
+    background-color: #0094FF;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+  }
+  
+  .divider {
+    padding: 0 1rem;
+  }
+  /******************************************************************************
+  END Glitch hello-app default styles
+  ******************************************************************************/
+  
+  body {
+    font-family: HK Grotesk;
+    background-color: var(--color-bg);
+  }
+  
+  /* Page structure */
+  .wrapper {
+    min-height: var(--wrapper-height);
+    display: grid;
+    place-items: center;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .ff {
+    min-height: var(--wrapper-height);
+    display: grid;
+    place-items: center;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .em {
+    min-height: var(--wrapper-height);
+    display: grid;
+    place-items: center;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .sss {
+    min-height: var(--wrapper-height);
+    display: grid;
+    place-items: center;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .en {
+    min-height: var(--wrapper-height);
+    display: grid;
+    place-items: center;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .mm {
+    min-height: var(--wrapper-height);
+    display: grid;
+    place-items: center;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Very light scaling for our illustration */
+  .title {
+    color: #8d9caa;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105%;
+    margin: 0;
+  }
+  .titlecr {
+    color: #8d9caa;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105%;
+    margin: 0;
+  }
+  .creds {
+    color: #8d9caa;
+    font-family: HK Grotesk;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 105%;
+    margin: 0;
+  }
+  .creds:visited {
+    text-decoration: none;
+  }
+  .credss {
+    color: #8d9caa;
+    font-family: HK Grotesk;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 105%;
+    margin: 0;
+  }
+  .credss:hover {
+    color:#d5fffc
+  }
+  .credss:visited {
+    text-decoration: none;
+  }
+  .title:hover {
+    color: #ffffff;
+  }
+  .titlecr:hover {
+    color: #ffffff;
+  }
+  .titles {
+    color: #90aa8d;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105%;
+    margin: 0;
+  }
+  .titles:hover {
+    color: #ffffff;
+  }
+  .titless {
+    color: #411818;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105%;
+    margin: 0;
+  }
+  .titless:hover {
+    color: #ffa6a6;
+  }
+  .titleeng {
+    color: #8aeaf5;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105%;
+    margin: 0;
+  }
+  .titleeng:hover {
+    color: #edfdff;
+  }
+  .titlemat {
+    color: #fff3ad;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105%;
+    margin: 0;
+  }
+  .titlemat:hover {
+    color: #edfdff;
+  }
+  .titlef {
+    color: #f8be7c;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105%;
+    margin: 0;
+  }
+  .titlef:hover {
+    color: #ffffff;
+  }
+  .titleem {
+    color: #A492AD;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105%;
+    margin: 0;
+  }
+  .titleem:hover {
+    color: #ffffff;
+  }
+  
+  /* Very light scaling for our illustration */
+  .illustration {
+    max-width: 10%;
+    max-height: var(--image-max-width);
+    margin-top: var(--image-margin);
+  }
+  
+  /* Instructions */
+  .instructions {
+    margin: 1rem auto 0;
+  }
+  
+  /* Button - Add it from the README instructions */
+  button,
+  input {
+    font-family: inherit;
+    font-size: 100%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: 200ms;
+  }
+  .sub {
+    color: black;
+    padding: 2px 3px;
+    text-align: center;
+    display: inline-block;
+  }
+  .emath {
+    color: black;
+    padding: 2px 3px;
+    text-align: center;
+    display: inline-block;
+  }
+  .ss {
+    color: black;
+    padding: 2px 3px;
+    text-align: center;
+    display: inline-block;
+  }
+  .engeng {
+    color: black;
+    padding: 2px 3px;
+    text-align: center;
+    display: inline-block;
+  }
+  .matmat {
+    color: black;
+    padding: 2px 3px;
+    text-align: center;
+    display: inline-block;
+  }
+  .ss2 {
+    color: black;
+    padding: 2px 3px;
+    text-align: center;
+    display: inline-block;
+  }
+  .ee {
+    color: black;
+    padding: 2px 3px;
+    text-align: center;
+    display: inline-block;
+  }
+  .waaa {
+    position: absolute;
+    top: 20;
+    left: 20;
+    padding: 10px;
+    background: #788385;
+    border: 0px
+  }
+  .waaaa {
+    position: absolute;
+    top: 20;
+    left: 20;
+    padding: 10px;
+    background: #ffbd5a;
+    border: 0px
+  }
+  .waaaaa {
+    position: absolute;
+    top: 20;
+    left: 20;
+    padding: 10px;
+    background: #daa1e4;
+    border: 0px
+  }
+  .waaaaaa {
+    position: absolute;
+    top: 20;
+    left: 20;
+    padding: 10px;
+    background: #e4a1a5;
+    border: 0px
+  }
+  .waaaaaaa {
+    position: absolute;
+    top: 20;
+    left: 20;
+    padding: 10px;
+    background: #71e3ff;
+    border: 0px
+  }
+  .waaaaaaaa {
+    position: absolute;
+    top: 20;
+    left: 20;
+    padding: 10px;
+    background: #fafca4;
+    border: 0px
+  }
+  .scibody {
+    background-color:#051E1F;
+  }
+  .matbody {
+    background-color:#FFB300;
+  }
+  .engbody {
+    background-color:#235284;
+  }
+  .filbody {
+    background-color: #EF7C4A;
+  }
+  .socstudbody {
+    background-color: #872D37;
+  }
+  .embody {
+    background-color: #573561;
+  }
+  .waaa:hover,
+  .waaa:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+  }
+  .waaaa:hover,
+  .waaaa:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+  }
+  .waaaaa:hover,
+  .waaaaa:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+  }
+  .waaaaaa:hover,
+  .waaaaaa:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+  }
+  .waaaaaaa:hover,
+  .waaaaaaa:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+  }
+  .waaaaaaaa:hover,
+  .waaaaaaaa:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+  }
+  #aaa {
+    opacity:0.2;
+  }
+  /* Subheading */
+  h2 {
+    color: #8d9caa;
+  }
+  .sw:hover {
+    color: #4f6576 !important;
+  }
+  .bneng {
+    color: #a5ccea;
+  }
+  .bnmat {
+    color: #e9e798;
+  }
+  .sub:hover {
+    color: #747F79 !important;
+  }
+  .ss:hover {
+    color: #ffd6d6 !important;
+  }
+  .engeng:hover {
+    color: #d5f9fa !important;
+  }
+  .matmat:hover {
+    color: #9f9702 !important;
+  }
+  .ss2:hover {
+    color: #7c3434 !important;
+  }
+  .emath:hover {
+    color: #f3caff !important;
+  }
+  .ee:hover {
+    color: #a3a4a4 !important;
+  }
+  .bn {
+    color: #90aa8d;
+  }
+  .bn {
+    color: #90aa8d;
+  }
+  h5 {
+    color: #8d9caa;
+    opacity:0.5;
+  }
+  .bn:hover {
+    color: #badab6 !important;
+  }
+  .bneng:hover {
+    color: #e2eef0 !important;
+  }
+  .bnmat:hover {
+    color: #f0ede2 !important;
+  }
+  /* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(164, 145, 145); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #716767; 
+}
+
+  /* Interactive image */
+  .illustration:active {
+    transform: translateY(5px);
+  }
+  .titlecr:active {
+    transform: translateY(5px);
+  }
+  .but:active {
+    transform: translateY(5px);
+  }
+  .but {
+    display: inline-block;
+  }
+  
+  /* Button dip
+  - Toggling this class on and off will move it down and up again
+  - The button transition property above determines the speed of the translate (500ms)
+  */
+  .dipped {
+    transform: translateY(5px);
+  }
+  
+  /* Links that open files in the editor */
+  .fileopener {
+    cursor:pointer;
+    font-weight:bold;
+    border-bottom:3px solid var(--color-primary);
+    color: var(--color-secondary);
+  }
+  .fileopener:hover {
+    border-bottom:3px solid var(--color-secondary);
+  }
+  
