@@ -1,2 +1,0 @@
-# handoutsss
-Collection of handouts
